@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author       = { "Minlison" => "yuanhang@minlison.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Minlison/MLSCache.git", :tag => "#{s.version}" }
-  s.documentation_url = "https://www.minlison.cn/mlscache"
+  s.documentation_url = "https://www.minlison.cn/article/mlscache"
   s.requires_arc = true
   s.static_framework = true
   s.source_files  = "Classes/**/*.{h,m}"

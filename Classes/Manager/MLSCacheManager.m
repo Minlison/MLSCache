@@ -167,16 +167,14 @@ BOOL selector_belongsToProtocol(SEL selector, Protocol * protocol);
 }
 
 + (NSString *)getHumanStringForBytes:(NSUInteger)bytes {
-    if (bytes < ((unsigned long long)1 << 10)) {
+    if (bytes < (((NSUInteger)1) << 10)) {
         return [NSString stringWithFormat:@"%dB",(int)bytes];
-    } else if (bytes < ((unsigned long long)1 << 20)) {
-        return [NSString stringWithFormat:@"%.0fKB", (bytes * 1.0 / ((unsigned long long)1 << 10))];
-    } else if (bytes < ((unsigned long long)1 << 30)) {
-        return [NSString stringWithFormat:@"%.2fMB", (bytes * 1.0 / ((unsigned long long)1 << 20))];
-    } else if (bytes < ((unsigned long long)1 << 40)) {
-        return [NSString stringWithFormat:@"%.2fGB", (bytes * 1.0 / ((unsigned long long)1 << 30))];
+    } else if (bytes < (((NSUInteger)1) << 20)) {
+        return [NSString stringWithFormat:@"%.0fKB", (bytes * 1.0 / (((NSUInteger)1) << 10))];
+    } else if (bytes < (((NSUInteger)1) << 30)) {
+        return [NSString stringWithFormat:@"%.2fMB", (bytes * 1.0 / (((NSUInteger)1) << 20))];
     } else {
-        return [NSString stringWithFormat:@"%.2fTB", (bytes * 1.0 / ((unsigned long long)1 << 40))];
+        return [NSString stringWithFormat:@"%.2fGB", (bytes * 1.0 / (((NSUInteger)1) << 30))];
     }
 }
 
