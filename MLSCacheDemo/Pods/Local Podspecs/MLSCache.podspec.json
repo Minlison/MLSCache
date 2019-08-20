@@ -1,0 +1,23 @@
+{
+  "name": "MLSCache",
+  "version": "1.0.0",
+  "summary": "MLSCache",
+  "description": "MLSCache 组件化中心，统一缓存管理模块",
+  "homepage": "https://github.com/Minlison/MLSCache.git",
+  "license": "MIT",
+  "authors": {
+    "Minlison": "yuanhang@minlison.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/Minlison/MLSCache.git",
+    "tag": "1.0.0"
+  },
+  "documentation_url": "https://www.minlison.cn/mlscache",
+  "requires_arc": true,
+  "static_framework": true,
+  "source_files": "Classes/**/*.{h,m}",
+  "public_header_files": "Classes/Manager/**/*.h"
+}

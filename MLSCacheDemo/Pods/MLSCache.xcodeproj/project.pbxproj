@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EFD46C75411A90B481843BDDB0F1374 /* MLSYYKVStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1957BDCCA734639F4F34449FCABA1462 /* MLSYYKVStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29A332576B996120400A9965A1491829 /* MLSYYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E521614700E23182746D34CF0C17BC19 /* MLSYYMemoryCache.m */; };
+		2EB72018EFC8F709398A8623CA4768A7 /* MLSCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3DEED90DB41D8C83D13A213BA0961B /* MLSCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59BE6795B058F16743346B86BD6D7E2B /* MLSCacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FCFA5A2381B67D63BA2DCC422F0A512 /* MLSCacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D7A81671643B6D54FAF320685402814 /* MLSYYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CA2D935F2C43430405FE2D624C46F2 /* MLSYYDiskCache.m */; };
+		6A11ED03990B981D3D8065810449FAB4 /* MLSYYMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0284EFD241A99672BB9B9C423AB99CF4 /* MLSYYMemoryCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75D752D0BF58A460E1AD1CA84716A930 /* MLSYYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 431D70BC2F87E3F2A7EE273A7A4739D1 /* MLSYYCache.m */; };
+		7D28B9BE20182629A9A251557408F8FB /* MLSYYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 541428F90DD82D202115107494383C3C /* MLSYYKVStorage.m */; };
+		BFDEF3A1DE2709923D03EA00A68104F5 /* MLSCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ED555524EC46975F8D3298547DF5F3F /* MLSCache-dummy.m */; };
+		C3A7F626AD3ECAE93A62017447492967 /* MLSCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A0F84DD44A83658DE52CEFB2DA7EB6 /* MLSCacheManager.m */; };
+		E0B3A7CFBA06465868A4AABB68DB7BF5 /* MLSYYDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E8C23379F673B7E373D0847ABA5E39B7 /* MLSYYDiskCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0017D41ADD6E15D053C971EFF573C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4780D32617D39E3F6EFF767D58E4843B /* Foundation.framework */; };
+		F054BFFF2A8ACDDE6F390B6D927BAE5A /* MLSCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E2EFB95AD2A6E466B993D50F053BC520 /* MLSCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F99C37556195B56C5CDB3AEE19A39735 /* MLSYYCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 089EE5D545C9916DF50E7555E09F3362 /* MLSYYCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0284EFD241A99672BB9B9C423AB99CF4 /* MLSYYMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSYYMemoryCache.h; sourceTree = "<group>"; };
+		089EE5D545C9916DF50E7555E09F3362 /* MLSYYCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSYYCache.h; sourceTree = "<group>"; };
+		1957BDCCA734639F4F34449FCABA1462 /* MLSYYKVStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSYYKVStorage.h; sourceTree = "<group>"; };
+		431D70BC2F87E3F2A7EE273A7A4739D1 /* MLSYYCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSYYCache.m; sourceTree = "<group>"; };
+		43A0F84DD44A83658DE52CEFB2DA7EB6 /* MLSCacheManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSCacheManager.m; sourceTree = "<group>"; };
+		4780D32617D39E3F6EFF767D58E4843B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4ACB0CADE0455060F8A740C7F16AEBFC /* MLSCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLSCache-prefix.pch"; sourceTree = "<group>"; };
+		541428F90DD82D202115107494383C3C /* MLSYYKVStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSYYKVStorage.m; sourceTree = "<group>"; };
+		541C4EB6CDED63C12ECE1FBE0C8BCE65 /* MLSCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MLSCache.modulemap; sourceTree = "<group>"; };
+		6FCFA5A2381B67D63BA2DCC422F0A512 /* MLSCacheManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSCacheManager.h; sourceTree = "<group>"; };
+		9D3DEED90DB41D8C83D13A213BA0961B /* MLSCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLSCache-umbrella.h"; sourceTree = "<group>"; };
+		9ED555524EC46975F8D3298547DF5F3F /* MLSCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLSCache-dummy.m"; sourceTree = "<group>"; };
+		B1CA2D935F2C43430405FE2D624C46F2 /* MLSYYDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSYYDiskCache.m; sourceTree = "<group>"; };
+		B74CB0884A8B8A263F6D9B77B4C1C4E9 /* MLSCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MLSCache-Info.plist"; sourceTree = "<group>"; };
+		C35B357D2EC028B8064881B6D4FBB9B3 /* MLSCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLSCache.xcconfig; sourceTree = "<group>"; };
+		D563D04F6E43D2E4A89042A081737C15 /* MLSCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MLSCache.framework; path = MLSCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27BEF6C1A97C43F8549CEA026B25884 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E2EFB95AD2A6E466B993D50F053BC520 /* MLSCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSCache.h; sourceTree = "<group>"; };
+		E521614700E23182746D34CF0C17BC19 /* MLSYYMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLSYYMemoryCache.m; sourceTree = "<group>"; };
+		E8C23379F673B7E373D0847ABA5E39B7 /* MLSYYDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLSYYDiskCache.h; sourceTree = "<group>"; };
+		FFDD84025B2F18A5C3E637C2D67F3312 /* MLSCache.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MLSCache.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9E59F9FB4212530E1B0A47CF6B0C03F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0017D41ADD6E15D053C971EFF573C3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17B4E6B56A150334E5133C87606BA7D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				541C4EB6CDED63C12ECE1FBE0C8BCE65 /* MLSCache.modulemap */,
+				C35B357D2EC028B8064881B6D4FBB9B3 /* MLSCache.xcconfig */,
+				9ED555524EC46975F8D3298547DF5F3F /* MLSCache-dummy.m */,
+				B74CB0884A8B8A263F6D9B77B4C1C4E9 /* MLSCache-Info.plist */,
+				4ACB0CADE0455060F8A740C7F16AEBFC /* MLSCache-prefix.pch */,
+				9D3DEED90DB41D8C83D13A213BA0961B /* MLSCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "MLSCacheDemo/Pods/Target Support Files/MLSCache";
+			sourceTree = "<group>";
+		};
+		40DA4CBFF5F524D59EBB6932294616D6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E2EFB95AD2A6E466B993D50F053BC520 /* MLSCache.h */,
+				6FCFA5A2381B67D63BA2DCC422F0A512 /* MLSCacheManager.h */,
+				43A0F84DD44A83658DE52CEFB2DA7EB6 /* MLSCacheManager.m */,
+			);
+			name = Manager;
+			path = Classes/Manager;
+			sourceTree = "<group>";
+		};
+		535A0F6FB467C600B273200D76A15BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75D4F164C4BC6880B91D996AEAD0D99B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		66094B096CCA730A5643CBA141786AB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D563D04F6E43D2E4A89042A081737C15 /* MLSCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D4F164C4BC6880B91D996AEAD0D99B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4780D32617D39E3F6EFF767D58E4843B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A5F77BB6FCFA362F43F9832530B70F4F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E27BEF6C1A97C43F8549CEA026B25884 /* LICENSE */,
+				FFDD84025B2F18A5C3E637C2D67F3312 /* MLSCache.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		B501A5C48A7CC6E4C0630B5B1ADA9548 /* YYCacheModify */ = {
+			isa = PBXGroup;
+			children = (
+				089EE5D545C9916DF50E7555E09F3362 /* MLSYYCache.h */,
+				431D70BC2F87E3F2A7EE273A7A4739D1 /* MLSYYCache.m */,
+				E8C23379F673B7E373D0847ABA5E39B7 /* MLSYYDiskCache.h */,
+				B1CA2D935F2C43430405FE2D624C46F2 /* MLSYYDiskCache.m */,
+				1957BDCCA734639F4F34449FCABA1462 /* MLSYYKVStorage.h */,
+				541428F90DD82D202115107494383C3C /* MLSYYKVStorage.m */,
+				0284EFD241A99672BB9B9C423AB99CF4 /* MLSYYMemoryCache.h */,
+				E521614700E23182746D34CF0C17BC19 /* MLSYYMemoryCache.m */,
+			);
+			name = YYCacheModify;
+			path = Classes/YYCacheModify;
+			sourceTree = "<group>";
+		};
+		C32C08E3F37A8E89C167F937D1997418 = {
+			isa = PBXGroup;
+			children = (
+				535A0F6FB467C600B273200D76A15BD9 /* Frameworks */,
+				FB292B280F2FE2AB9D9DAD6AF51879F1 /* MLSCache */,
+				66094B096CCA730A5643CBA141786AB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB292B280F2FE2AB9D9DAD6AF51879F1 /* MLSCache */ = {
+			isa = PBXGroup;
+			children = (
+				40DA4CBFF5F524D59EBB6932294616D6 /* Manager */,
+				A5F77BB6FCFA362F43F9832530B70F4F /* Pod */,
+				17B4E6B56A150334E5133C87606BA7D2 /* Support Files */,
+				B501A5C48A7CC6E4C0630B5B1ADA9548 /* YYCacheModify */,
+			);
+			name = MLSCache;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		75F998A6CDFB612A770BB2A5CEE880AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB72018EFC8F709398A8623CA4768A7 /* MLSCache-umbrella.h in Headers */,
+				F054BFFF2A8ACDDE6F390B6D927BAE5A /* MLSCache.h in Headers */,
+				59BE6795B058F16743346B86BD6D7E2B /* MLSCacheManager.h in Headers */,
+				F99C37556195B56C5CDB3AEE19A39735 /* MLSYYCache.h in Headers */,
+				E0B3A7CFBA06465868A4AABB68DB7BF5 /* MLSYYDiskCache.h in Headers */,
+				1EFD46C75411A90B481843BDDB0F1374 /* MLSYYKVStorage.h in Headers */,
+				6A11ED03990B981D3D8065810449FAB4 /* MLSYYMemoryCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D010F85D545CB15729A150D17E180D22 /* MLSCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C87E9ECCF2D8306378FBF12D9BB8050 /* Build configuration list for PBXNativeTarget "MLSCache" */;
+			buildPhases = (
+				75F998A6CDFB612A770BB2A5CEE880AA /* Headers */,
+				FA954A10091F31DD68227DD47C037ACC /* Sources */,
+				E9E59F9FB4212530E1B0A47CF6B0C03F /* Frameworks */,
+				9DF296F6BF54B00F336643E6FFA346EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLSCache;
+			productName = MLSCache;
+			productReference = D563D04F6E43D2E4A89042A081737C15 /* MLSCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62DD1A89868B2F03C539A4D9E0E61860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 0969769805922521BBF301DC75F6F13A /* Build configuration list for PBXProject "MLSCache" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C32C08E3F37A8E89C167F937D1997418;
+			productRefGroup = 66094B096CCA730A5643CBA141786AB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D010F85D545CB15729A150D17E180D22 /* MLSCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DF296F6BF54B00F336643E6FFA346EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA954A10091F31DD68227DD47C037ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFDEF3A1DE2709923D03EA00A68104F5 /* MLSCache-dummy.m in Sources */,
+				C3A7F626AD3ECAE93A62017447492967 /* MLSCacheManager.m in Sources */,
+				75D752D0BF58A460E1AD1CA84716A930 /* MLSYYCache.m in Sources */,
+				5D7A81671643B6D54FAF320685402814 /* MLSYYDiskCache.m in Sources */,
+				7D28B9BE20182629A9A251557408F8FB /* MLSYYKVStorage.m in Sources */,
+				29A332576B996120400A9965A1491829 /* MLSYYMemoryCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4EE0B8081370C7ADE1B707B8581E36F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35B357D2EC028B8064881B6D4FBB9B3 /* MLSCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLSCache/MLSCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLSCache/MLSCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/MLSCache/MLSCache.modulemap";
+				PRODUCT_MODULE_NAME = MLSCache;
+				PRODUCT_NAME = MLSCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9AD5D10333F5A83C80B39227D4190BB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D1011A3930CB10C9BAAB5431C525ADE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C35B357D2EC028B8064881B6D4FBB9B3 /* MLSCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLSCache/MLSCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLSCache/MLSCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/MLSCache/MLSCache.modulemap";
+				PRODUCT_MODULE_NAME = MLSCache;
+				PRODUCT_NAME = MLSCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E467FCCA7273C586FBF156DA3B49A708 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0969769805922521BBF301DC75F6F13A /* Build configuration list for PBXProject "MLSCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E467FCCA7273C586FBF156DA3B49A708 /* Debug */,
+				9AD5D10333F5A83C80B39227D4190BB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C87E9ECCF2D8306378FBF12D9BB8050 /* Build configuration list for PBXNativeTarget "MLSCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1011A3930CB10C9BAAB5431C525ADE7 /* Debug */,
+				4EE0B8081370C7ADE1B707B8581E36F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62DD1A89868B2F03C539A4D9E0E61860 /* Project object */;
+}

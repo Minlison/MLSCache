@@ -1,0 +1,16 @@
+PODS:
+  - MLSCache (1.0.0)
+
+DEPENDENCIES:
+  - MLSCache (from `../`)
+
+EXTERNAL SOURCES:
+  MLSCache:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLSCache: d7735f4536a976dca3fba50ca26f02beaf68273a
+
+PODFILE CHECKSUM: d40e8fd0d460264cfef322f138af59b851eae33b
+
+COCOAPODS: 1.7.3
