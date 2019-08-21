@@ -6,9 +6,9 @@ Pod::Spec.new do |s|
                     MLSCache 组件化中心，统一缓存管理模块
                    DESC
 
-  s.homepage     = "https://github.com/Minlison/MLSCache.git"
+  s.homepage     = "https://www.minlison.cn"
   s.license      = "MIT"
-  s.author       = { "Minlison" => "yuanhang@minlison.com" }
+  s.author       = { "Minlison" => "yuanhang.1991@163.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/Minlison/MLSCache.git", :tag => "v#{s.version}" }
   s.documentation_url = "https://www.minlison.cn/article/mlscache"
