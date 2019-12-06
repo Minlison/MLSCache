@@ -445,8 +445,9 @@
 			baseConfigurationReference = 9C870EC0FA000678075193F0 /* Pods-MLSCacheDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97JM59BUMZ;
 				INFOPLIST_FILE = MLSCacheDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -464,8 +465,9 @@
 			baseConfigurationReference = 3C4976B9C0D5EC70DB396F5E /* Pods-MLSCacheDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 97JM59BUMZ;
 				INFOPLIST_FILE = MLSCacheDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,8 +485,10 @@
 			baseConfigurationReference = 5DC646BABFD86B7B43D3AF4E /* Pods-MLSCacheDemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FCF8X89TDD;
+				DEVELOPMENT_TEAM = 97JM59BUMZ;
 				INFOPLIST_FILE = MLSCacheDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -493,6 +497,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.minlison.MLSCacheDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLSCacheDemo.app/MLSCacheDemo";
 			};
@@ -503,8 +509,10 @@
 			baseConfigurationReference = 2343787FDEEAB7020FBBF569 /* Pods-MLSCacheDemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FCF8X89TDD;
+				DEVELOPMENT_TEAM = 97JM59BUMZ;
 				INFOPLIST_FILE = MLSCacheDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -513,6 +521,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.minlison.MLSCacheDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MLSCacheDemo.app/MLSCacheDemo";
 			};

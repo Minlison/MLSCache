@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MLSCache"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "MLSCache"
   s.description  = <<-DESC
                     MLSCache 组件化中心，统一缓存管理模块

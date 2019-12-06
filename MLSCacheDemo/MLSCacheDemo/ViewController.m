@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import <MLSCache/MLSCache.h>
-#import <YYCache/YYCache.h>
+
 @interface ViewController ()
 
 @end
@@ -17,5 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    for (int i = 0; i < 10; i++) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [MLSCacheManuallyManager setObject:@"123" forKey:[NSString stringWithFormat:@"key-%d",i]];
+            id res = [MLSCacheManuallyManager objectForKey:[NSString stringWithFormat:@"key-%d",i]];
+            NSLog(@"%@",res);
+        });
+    }
 }
 @end

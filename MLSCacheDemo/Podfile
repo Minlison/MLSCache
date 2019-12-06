@@ -15,5 +15,5 @@ end
 target 'MLSCacheDemoTests' do
   use_frameworks!
   pod 'MLSCache', :path => '../'
-#  pod 'YYCache'
+  pod 'YYCache'
 end

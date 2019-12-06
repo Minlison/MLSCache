@@ -13,6 +13,9 @@
 #import "MLSYYMemoryCache.h"
 #import "MLSYYDiskCache.h"
 
+@interface MLSYYCache ()
+@property(nonatomic, strong) dispatch_queue_t readWriteQueue;
+@end
 @implementation MLSYYCache
 
 - (instancetype) init {
@@ -39,6 +42,8 @@
     _name = name;
     _diskCache = diskCache;
     _memoryCache = memoryCache;
+    /// 串行队列
+    _readWriteQueue = dispatch_queue_create("com.minlison.cache", DISPATCH_QUEUE_SERIAL);
     return self;
 }
 
@@ -58,7 +63,7 @@
     if (!block) return;
     
     if ([_memoryCache containsObjectForKey:key]) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_sync(_readWriteQueue, ^{
             block(key, YES);
         });
     } else  {
@@ -81,7 +86,7 @@
     if (!block) return;
     id<NSCoding> object = [_memoryCache objectForKey:key];
     if (object) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        dispatch_sync(_readWriteQueue, ^{
             block(key, object);
         });
     } else {

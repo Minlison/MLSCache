@@ -16,9 +16,9 @@
 #import <pthread.h>
 
 
-static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
-    return dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
-}
+//static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
+//    return dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0);
+//}
 
 /**
  A node in linked map.
@@ -54,6 +54,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
     _MLSYYLinkedMapNode *_tail; // LRU, do not change it directly
     BOOL _releaseOnMainThread;
     BOOL _releaseAsynchronously;
+    dispatch_queue_t _queue;
 }
 
 /// Insert a node at head and update the total cost.
@@ -78,11 +79,12 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
 
 @implementation _MLSYYLinkedMap
 
-- (instancetype)init {
+- (instancetype)initWithQueue:(dispatch_queue_t)queue {
     self = [super init];
     _dic = CFDictionaryCreateMutable(CFAllocatorGetDefault(), 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
     _releaseOnMainThread = NO;
     _releaseAsynchronously = YES;
+    _queue = queue ?: dispatch_queue_create("com.minlison.cache.linkmap", DISPATCH_QUEUE_SERIAL);
     return self;
 }
 
@@ -154,7 +156,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
         _dic = CFDictionaryCreateMutable(CFAllocatorGetDefault(), 0, &kCFTypeDictionaryKeyCallBacks, &kCFTypeDictionaryValueCallBacks);
         
         if (_releaseAsynchronously) {
-            dispatch_queue_t queue = _releaseOnMainThread ? dispatch_get_main_queue() : MLSYYMemoryCacheGetReleaseQueue();
+            dispatch_queue_t queue = _releaseOnMainThread ? dispatch_get_main_queue() : _queue;
             dispatch_async(queue, ^{
                 CFRelease(holder); // hold and release in specified queue
             });
@@ -180,7 +182,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
 
 - (void)_trimRecursively {
     __weak typeof(self) _self = self;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_autoTrimInterval * NSEC_PER_SEC)), dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_autoTrimInterval * NSEC_PER_SEC)), _queue, ^{
         __strong typeof(_self) self = _self;
         if (!self) return;
         [self _trimInBackground];
@@ -223,7 +225,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
         }
     }
     if (holder.count) {
-        dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : MLSYYMemoryCacheGetReleaseQueue();
+        dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : _queue;
         dispatch_async(queue, ^{
             [holder count]; // release in queue
         });
@@ -257,7 +259,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
         }
     }
     if (holder.count) {
-        dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : MLSYYMemoryCacheGetReleaseQueue();
+        dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : _queue;
         dispatch_async(queue, ^{
             [holder count]; // release in queue
         });
@@ -292,7 +294,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
         }
     }
     if (holder.count) {
-        dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : MLSYYMemoryCacheGetReleaseQueue();
+        dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : _queue;
         dispatch_async(queue, ^{
             [holder count]; // release in queue
         });
@@ -322,8 +324,8 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
 - (instancetype)init {
     self = super.init;
     pthread_mutex_init(&_lock, NULL);
-    _lru = [_MLSYYLinkedMap new];
     _queue = dispatch_queue_create("com.ibireme.cache.memory", DISPATCH_QUEUE_SERIAL);
+    _lru = [[_MLSYYLinkedMap alloc] initWithQueue:_queue];
     
     _countLimit = NSUIntegerMax;
     _costLimit = NSUIntegerMax;
@@ -442,7 +444,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
     if (_lru->_totalCount > _countLimit) {
         _MLSYYLinkedMapNode *node = [_lru removeTailNode];
         if (_lru->_releaseAsynchronously) {
-            dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : MLSYYMemoryCacheGetReleaseQueue();
+            dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : _queue;
             dispatch_async(queue, ^{
                 [node class]; //hold and release in queue
             });
@@ -462,7 +464,7 @@ static inline dispatch_queue_t MLSYYMemoryCacheGetReleaseQueue() {
     if (node) {
         [_lru removeNode:node];
         if (_lru->_releaseAsynchronously) {
-            dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : MLSYYMemoryCacheGetReleaseQueue();
+            dispatch_queue_t queue = _lru->_releaseOnMainThread ? dispatch_get_main_queue() : _queue;
             dispatch_async(queue, ^{
                 [node class]; //hold and release in queue
             });
